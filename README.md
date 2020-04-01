@@ -6,3 +6,5 @@ Common errors in working with Flutter
 ![Gradle Dependency Error](./gradle-dependency-error.png)
 
 ### How to solve it
+
+_Add solution_
