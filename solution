@@ -1,2 +1,1 @@
-by changing the gradle version(which is shown in error as required) in the distributionURL in gradle-wrapper.properties(in project->app->gradle->wrapper->gradle-wrapper.properties)
-by changing the class path gradle version 1.0.0 build gradle in android 
+
