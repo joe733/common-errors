@@ -1,15 +1,36 @@
-# Common Errors
-Common errors in working with Flutter
+# Solutions to common errors for Flutter Devs
+Potential errors while working with Flutter and their solutions.
 
-## Gradle Dependencies
+[//]: # (Hey there! We appriciate your effort to contribute.)
+[//]: # (1. Please append your contribution\(s\) alphabetically and re-number them if required)
+[//]: # (2. Follow the pattern already seen before you)
 
-![Gradle Dependency Error](./gradle-dependency-error.png)
 
-### Solution
+## 01. Gradle Dependency Error
+<details>
+  <summary><b>ScreenShots</b></summary>
+  <img src=./gradle-dependency-error.png>
+</details>
+<details>
+  <summary><b>Logs</b></summary>
+</details>
 
-Contributed by [@Adheela](https://github.com/adheela)
+### Solution 01<br>
+*by [@Adheela](https://github.com/adheela)*<br>
+**By changing the class path gradle version 1.0.0 build gradle in Android**<br>
+By changing the gradle version (which is shown in error (screenshot) as required) in the distribution URL in `gradle-wrapper.properties` (`in project` → `app` → `gradle` → `wrapper` → `gradle-wrapper.properties`)
 
-#### By changing the class path gradle version 1.0.0 build gradle in Android
+## 02. Syntax highlighting suddenly missing
+<details>
+  <summary><b>ScreenShots</b></summary>
+  <img src=./syntax-highlighting-suddenly-missing.png>
+</details>
+<details>
+  <summary><b>Logs</b></summary>
+</details>
 
-By changing the gradle version(which is shown in error as required) in the distributionURL in gradle-wrapper.properties(in project->app->gradle->wrapper->gradle-wrapper.properties)
-
+### Solution 02<br>
+*by [@joe733](https://github.com/joe733)*<br>
+- Check if you have `dart` plugin installed from VSCodium / VSCode marketpace.
+- If yes simply close and reopen the file you're working on.
+- Try to remove all the errors in your code.
