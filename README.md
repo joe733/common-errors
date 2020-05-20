@@ -52,7 +52,59 @@ By changing the gradle version (which is shown in the screenshot as required) in
 
 ---
 
-## 03. Syntax highlight is suddenly missing
+## 03. No rule to make target
+
+<details>
+  <summary><b>ScreenShots</b></summary>
+</details>
+
+<details>
+  <summary><b>Logs</b></summary>
+
+```make
+Launching lib/main.dart on Linux in debug mode...
+Makefile:117: warning: overriding recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:109: warning: ignoring old recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:117: warning: overriding recipe for target 'weekly_challenge/week_2'
+Makefile:109: warning: ignoring old recipe for target 'weekly_challenge/week_2'
+Makefile:117: warning: overriding recipe for target '-'
+Makefile:109: warning: ignoring old recipe for target '-'
+Makefile:116: *** mixed implicit and normal rules: deprecated syntax
+Makefile:121: warning: overriding recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:117: warning: ignoring old recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:121: warning: overriding recipe for target 'weekly_challenge/week_2'
+Makefile:117: warning: ignoring old recipe for target 'weekly_challenge/week_2'
+Makefile:121: warning: overriding recipe for target '-'
+Makefile:117: warning: ignoring old recipe for target '-'
+Makefile:125: warning: overriding recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:121: warning: ignoring old recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:125: warning: overriding recipe for target 'weekly_challenge/week_2'
+Makefile:121: warning: ignoring old recipe for target 'weekly_challenge/week_2'
+Makefile:125: warning: overriding recipe for target '-'
+Makefile:121: warning: ignoring old recipe for target '-'
+Makefile:131: warning: overriding recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:125: warning: ignoring old recipe for target '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'
+Makefile:131: warning: overriding recipe for target 'weekly_challenge/week_2'
+Makefile:125: warning: ignoring old recipe for target 'weekly_challenge/week_2'
+Makefile:131: warning: overriding recipe for target '-'
+Makefile:125: warning: ignoring old recipe for target '-'
+Makefile:130: *** mixed implicit and normal rules: deprecated syntax
+make: *** No rule to make target '%.cc', needed by '/home/joe/Documents/Workspace/GitHub/Flutter/LearnFlutter/flutter_kerala'. Stop.
+Exception: Build process failed
+Exited (sigterm)
+
+```
+
+</details>
+
+### Solution 03<br>
+*by [@joe733](https://github.com/joe733)*<br>
+
+<p align='center'> Happens while building on Linux (Ubuntu based) <br> Solution Status: NAY </p>
+
+---
+
+## 04. Syntax highlight is suddenly missing
 <details>
   <summary><b>ScreenShots</b></summary>
   <img src=./syntax-highlighting-suddenly-missing.png>
@@ -61,7 +113,7 @@ By changing the gradle version (which is shown in the screenshot as required) in
   <summary><b>Logs</b></summary>
 </details>
 
-### Solution 03<br>
+### Solution 04<br>
 *by [@joe733](https://github.com/joe733)*<br>
 - Check if you have `dart` plugin installed from VSCodium / VSCode [marketpace](https://marketplace.visualstudio.com/search?term=dart&target=VSCode&category=All%20categories&sortBy=Installs).
 - If yes simply close and reopen the file you're working on.
